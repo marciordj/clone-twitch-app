@@ -1,13 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
+import React, { Fragment } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Routes from './src/routes';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Teste pra ver se ta funcionando</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Fragment>
+      <Routes />
+      <StatusBar style='light' />
+    </Fragment>
   );
 }
 
